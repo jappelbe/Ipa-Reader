@@ -23,13 +23,13 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<rubyzip>, [">= 1.0.0"])
-      s.add_runtime_dependency(%q<CFPropertyList>, ["= 2.1.1"])
+      s.add_runtime_dependency(%q<CFPropertyList>, ["= 2.3.1"])
     else
       s.add_dependency(%q<rubyzip>, [">= 1.0.0"])
-      s.add_dependency(%q<CFPropertyList>, ["= 2.1.1"])
+      s.add_dependency(%q<CFPropertyList>, ["= 2.3.1"])
     end
   else
     s.add_dependency(%q<rubyzip>, [">= 1.0.0"])
-    s.add_dependency(%q<CFPropertyList>, ["= 2.1.1"])
+    s.add_dependency(%q<CFPropertyList>, ["= 2.3.1"])
   end
 end
