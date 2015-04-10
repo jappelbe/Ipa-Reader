@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/../lib/ipa_reader'
-require 'test/unit'
+require 'minitest/autorun'
 
-class IpaReaderTest < Test::Unit::TestCase
+class IpaReaderTest < Minitest::Unit::TestCase
   def setup
     @ipa_file = IpaReader::IpaFile.new(File.dirname(__FILE__) + '/MultiG.ipa')
   end
